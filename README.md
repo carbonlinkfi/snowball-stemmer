@@ -4,19 +4,11 @@ Provides a simple wrapper around the tartarus.org Snowball stemmer.
 
 ## Getting started
 
-Add the necessary dependencies
+Add the necessary dependency
 
 ### `deps.edn`
 
-    carbonlink/snowball-stemmer {:mvn/version "0.1.25"}
-
-### Source
-
-`:require` snowball-stemmer
-
-    (ns my.ns
-      (:require
-        [snowball-stemmer "0.1.0"]))
+    snowball-stemmer/snowball-stemmer {:mvn/version "0.2.0"}
 
 ## Building from source
 
@@ -25,10 +17,6 @@ Build locally to .m2 repository
     clj -T:build clean
     clj -T:build jar
     clj -T:build install
-
-### Publish JAR file
-
-TBD
 
 ## Usage
 
